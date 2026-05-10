@@ -18,6 +18,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/devops-platform
+            git pull origin main
             docker stop myapp || true
             docker rm myapp || true
             docker build -t devops-platform .
