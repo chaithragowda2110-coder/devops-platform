@@ -19,7 +19,7 @@ def health():
 def info():
     return jsonify({
         "app": "DevOps Deployment Platform",
-        "version": "1.0",
+        "version": "2.0",
         "cloud": "AWS EC2",
         "container": platform.node()
     }), 200
